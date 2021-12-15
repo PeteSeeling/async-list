@@ -23,3 +23,13 @@ Additional considerations:
   - What needs to live in a persistence layer?
 - Is there some state we need to initialize?
 - Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be resused?)
+
+
+PLAN
+- Create 1 Table SupaBase with 4 columns. 3 rows. 
+- Create render function that accepts 1 object and returns dom element. Create a div with 2 p tags. Outer div should have a ccs class of .....-item.
+- add fetch function to fetch-utils to fetch all items.
+- in app.js use window.addEventListner.('load) to fetch and display all data from supabase. 
+- loop through fetched array. for each object render and append a styled element ot the container element grabbed for the DOM. 
+- Do one at a time. 
+- REPEAT 4 Times

@@ -89,3 +89,21 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
+.breed-container{
+    display:flex;
+    border:solid 2px;
+    border-color:'black';
+
+}
+
+.country-container{
+    display:flex;
+    border:solid 2px;
+    border-color:'red';
+
+}
+.fish-container{
+    display:flex;
+    border:solid 2px;
+    border-color:'blue';
+}
