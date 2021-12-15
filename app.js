@@ -8,6 +8,9 @@ import { renderCountries } from './render-countries.js';
 import { getFish } from './fetch-fish.js';
 import { renderFish } from './render-fish.js';
 
+import { getAnimals } from './fetch-animals.js';
+import { renderAnimals } from './render-animals.js';
+
 // let state
 
 // set event listeners 
@@ -15,6 +18,7 @@ import { renderFish } from './render-fish.js';
 const breedContainerEl = document.getElementById('dog-breed-container');
 const countryContainerEl = document.getElementById('countries-container');
 const fishContainerEl = document.getElementById('fish-container');
+const animalContainerEl = document.createElement('animals-container');
 
 window.addEventListener('load', async() => {
 
@@ -40,8 +44,16 @@ window.addEventListener('load', async() => {
 
     for (let fishes of fish.data){
         const fishEl = renderFish(fishes);
-        console.log(fishes);
+        
         fishContainerEl.append(fishEl);
+    }
+
+    const animals = await getAnimals();
+
+    for (let animal of animals.data){
+        const animalsEl = renderAnimals(animal);
+        
+        animalContainerEl.append(animalsEl);
     }
 
 

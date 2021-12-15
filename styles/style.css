@@ -99,11 +99,11 @@ footer {
 .country-container{
     display:flex;
     border:solid 2px;
-    border-color:'black';
+    border-color:'red';
 
 }
 .fish-container{
     display:flex;
     border:solid 2px;
-    border-color:'black';
+    border-color:'blue';
 }
