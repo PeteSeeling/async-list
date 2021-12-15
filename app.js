@@ -18,7 +18,7 @@ import { renderAnimals } from './render-animals.js';
 const breedContainerEl = document.getElementById('dog-breed-container');
 const countryContainerEl = document.getElementById('countries-container');
 const fishContainerEl = document.getElementById('fish-container');
-const animalContainerEl = document.createElement('animals-container');
+const animalContainerEl = document.getElementById('animals-container');
 
 window.addEventListener('load', async() => {
 
